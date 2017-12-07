@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "outDir"                      : "lib/common",
+    "declaration"                 : false,
+    "allowJs"                     : false,
+    "allowSyntheticDefaultImports": false,
+    "target"                      : "es5",
+    "lib"                         : ["es2017", "es7", "dom"],
+    "module"                      : "commonjs",
+    "moduleResolution"            : "node",
+    "inlineSources"               : true,
+    "inlineSourceMap"             : false,
+    "jsx"                         : "react",
+    "jsxFactory"                  : "h",
+    "skipLibCheck"                : true,
+    "sourceMap"                   : true,
+    "emitDecoratorMetadata"       : true,
+    "experimentalDecorators"      : true,
+    "removeComments"              : false,
+    "noImplicitAny"               : true
+  },
+  "include"        : [
+    "src/**/*.ts",
+    "src/**/*.js",
+    "declarations/*.d.ts"
+  ]
+}

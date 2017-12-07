@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+// -*- mode: js -*-
+// vim: set filetype=javascript :
+
+require('../lib/common/main.js').run()

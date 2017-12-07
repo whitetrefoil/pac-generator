@@ -1,0 +1,78 @@
+{
+  "name": "@whitetrefoil/pac-generator",
+  "version": "0.1.0",
+  "description": "A simple tool to generate PAC file.",
+  "main": "lib/common/main.js",
+  "module": "lib/esm/main.js",
+  "typings": "lib/types/main.d.ts",
+  "scripts": {
+    "prepublishOnly": "node scripts/prepublish-checklist.js && npm run build",
+    "build": "rimraf lib && tsc && tsc -p tsconfig.common.json",
+    "publish": "echo \"Done publishing, don't forget to:\n  1. **dist-tag** your channel in npm.\n  2. bump version in package.json\nGood luck with the publish ;)\"",
+    "test": "tslint . && jest --no-cache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/whitetrefoil/pac-generator.git"
+  },
+  "author": "WhiteTrefoil <whitetrefoil@gmail.com>",
+  "license": "Unlicense",
+  "files": [
+    "bin/**",
+    "lib/**/*.js",
+    "lib/types/**/*.d.ts",
+    "README.md"
+  ],
+  "bin": {
+    "pac-generate": "bin/pac-generate"
+  },
+  "engines": {
+    "node": ">=8.9.1"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^21.1.5",
+    "@types/node": "^8.0.52",
+    "jest": "^21.2.1",
+    "rimraf": "^2.6.2",
+    "ts-jest": "^21.2.2",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.1"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.{ts,js}",
+      "!**/*.d.ts"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/~.*"
+    ],
+    "coverageDirectory": "test_results",
+    "coverageReporters": [
+      "clover",
+      "lcov",
+      "text-summary"
+    ],
+    "globals": {
+      "ts-jest": {
+        "skipBabel": false
+      }
+    },
+    "mapCoverage": true,
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json"
+    ],
+    "moduleNameMapper": {},
+    "setupFiles": [],
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(js|ts)$",
+    "transform": {
+      ".ts": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    }
+  }
+}
