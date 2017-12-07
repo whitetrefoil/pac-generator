@@ -32,9 +32,15 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
-  "dependencies": {},
+  "dependencies": {
+    "fs-extra": "^4.0.3",
+    "js-yaml": "^3.10.0",
+    "meow": "^4.0.0"
+  },
   "devDependencies": {
+    "@types/fs-extra": "^4.0.5",
     "@types/jest": "^21.1.5",
+    "@types/js-yaml": "^3.10.1",
     "@types/node": "^8.0.52",
     "jest": "^21.2.1",
     "rimraf": "^2.6.2",

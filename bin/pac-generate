@@ -2,4 +2,4 @@
 // -*- mode: js -*-
 // vim: set filetype=javascript :
 
-require('../lib/common/main.js').run()
+require('../lib/common/cli.js').run()
