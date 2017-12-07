@@ -103,7 +103,7 @@ export function run(input: string, outputDir: string) {
           output += `||shExpMatch(url,"${shExpMatch}")\n`
         }
 
-        output += `) {return ${proxy.proxy};}return DIRECT;}`
+        output += `) {return '${proxy.proxy}';}return 'DIRECT';}`
 
         outputFiles[proxy.filename] = output
       }
