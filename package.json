@@ -1,6 +1,6 @@
 {
   "name": "@whitetrefoil/pac-generator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple tool to generate PAC file.",
   "main": "lib/common/main.js",
   "module": "lib/esm/main.js",
