@@ -1,0 +1,12 @@
+rules:
+  - "*youtube*"
+  - "ak.fbcdn.net"
+  - "*.fbcdn.net"
+  - '*google*'
+  - '*gstatic*'
+  - '*ggpht*'
+proxies:
+  - filename: socks
+    proxy: SOCKS5 localhost:48101
+  - filename: http
+    proxy: HTTP localhost:48101

@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Run" type="NodeJSConfigurationType" factoryName="Node.js" application-parameters="-o ~playground tests/fixture/test.yml" path-to-js-file="bin/pac-generate" working-dir="$PROJECT_DIR$">
+    <envs>
+      <env name="NODE_ENV" value="development" />
+    </envs>
+    <method />
+  </configuration>
+</component>
