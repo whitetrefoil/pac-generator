@@ -19,6 +19,10 @@ pac-generate rule.yml
 Changelog & Roadmap
 -------------------
 
+### v0.1.2
+
+* Fix PAC syntax error.
+
 ### v0.1.1
 
 * Set license to the "unlicense".
