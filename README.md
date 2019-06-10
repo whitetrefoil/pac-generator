@@ -19,6 +19,10 @@ pac-generate rule.yml
 Changelog & Roadmap
 -------------------
 
+### v0.1.3
+
+* Upgrade npm dependencies.
+
 ### v0.1.2
 
 * Fix PAC syntax error.
